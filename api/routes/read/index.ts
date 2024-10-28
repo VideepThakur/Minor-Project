@@ -24,7 +24,7 @@ interface GetItemsRequest extends Request {
     address: string;
   };
 }
-router.get("/getItems", async (req: Request, res: Response) => {
+router.post("/getItems", async (req: Request, res: Response) => {
   try {
     const currAddress = req.body.address;
 
